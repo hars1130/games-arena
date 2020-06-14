@@ -1,0 +1,25 @@
+<div>
+  <p class="search-box">
+  <input placeholder="Search" type="text" name="gameSearch" [(ngModel)]="searchStr" (keyup)="filterGames()">
+  </p>
+</div>
+<div style="margin-bottom: 10px;">
+  <button (click)="ascendingSort()">Sort by score (low to high)</button>
+  <button (click)="descendingSort()">Sort by score (high to low)</button>
+</div>
+<div class="games-list-container">
+  <div *ngFor="let game of filteredGames" class="game-item">
+      <h4 style="margin:2px 0 0 6px;"><b>{{ game.title }}</b></h4>
+      <p style="margin:2px 0 0 6px;">{{ game.platform }}</p>
+      <span *ngIf="game.editors_choice=='Y'" style="font-size: 20px;
+      margin: 10px;">&#9733;</span>
+    <div class="game-item-footer">
+      <div>
+        Genre: {{ game.genre }}
+      </div>
+      <div>
+        {{ game.score }}
+      </div>
+    </div>
+  </div>
+</div>

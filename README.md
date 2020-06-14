@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 **Preview:**
 * mobile:
-* ![image of phone view](src/assets/mobile-view.jpg)
+* ![image of phone view](src/assets/mobile-view.JPG)
 * pc:
 * ![image of pc view](src/assets/web-view.JPG)
 
